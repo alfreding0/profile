@@ -1,0 +1,12 @@
+/* Uso para el efecto de animacion */
+article,
+.animated-top {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.mis-redes {
+    opacity: 0;
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}

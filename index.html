@@ -9,6 +9,9 @@
 
     <link rel="shortcut icon" href="img/profile.png" type="image/x-icon">
 
+    <!-- CSS para el efecto de animacion con Anime.js -->
+    <link rel="stylesheet" href="css/styles.css">
+
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -30,10 +33,10 @@
                 <div class="relative mt-8 flex items-center gap-x-4">
                     <img src="img/profile.png" alt="" class="h-20 w-20 rounded-full bg-gray-50">
                     <div class="text-sm leading-6">
-                        <p class="font-semibold text-gray-900 dark:text-white">
-                            <a href="#">
+                        <p class="text-gray-900 dark:text-white">
+                            <a>
                                 <span class="absolute inset-0"></span>
-                                ING. ALFREDO GONZALES QUIUCHA
+                                Alfredo Gonzales Quiucha | <span class="font-mono">@alfreding0</span>
                             </a>
                         </p>
                         <p class="text-gray-600 dark:text-slate-400">System Engineer</p>
@@ -44,7 +47,7 @@
 
                     <!-- https://tailwind-elements.com/docs/standard/components/social-buttons/                   -->
                     <!-- Whatsapp -->
-                    <a href="http://wa.me/59168792504" target="_blank"
+                    <a href="http://wa.me/59168792504" class="wa-contact" target="_blank"
                         class=" hover:bg-gray-100 rounded-full py-1 px-1">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="currentColor"
                             style="color: #13fb7c" viewBox="0 0 24 24">
@@ -57,7 +60,7 @@
                     <a href="https://github.com/alfreding0" target="_blank"
                         class=" hover:bg-gray-100 rounded-full py-1 px-1">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="currentColor"
-                            style="color: #5a438f" viewBox="0 0 24 24">
+                            style="color: #bb9eff" viewBox="0 0 24 24">
                             <path
                                 d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
                         </svg>
@@ -110,270 +113,377 @@
             </div>
 
             <div
-                class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-1 gap-y-1 border-t border-blue-500 pt-1 lg:mx-0 lg:max-w-none dark:text-white">
+                class="mx-auto my-10 grid max-w-2xl grid-cols-1 gap-x-1 gap-y-1 border-t border-blue-500 pt-1 lg:mx-0 lg:max-w-none dark:text-white">
                 <div class="mb-3">
-                    <span class="px-3 text-xl font-semibold">Skills</span>
+                    <span class="text-2xl font-semibold">Skills</span>
                 </div>
                 <div>
                     <span
-                        class="rounded-md bg-blue-200 mx-0.5 my-0.5 px-3 py-0.5 inline-block text-gray-600 dark:bg-blue-400 dark:text-white">Servers</span>
+                        class="mis-redes rounded-md bg-blue-200 mx-0.5 my-0.5 px-3 py-0.5 inline-block text-gray-600 dark:bg-blue-400 dark:text-white">Servers</span>
                     <span
-                        class="rounded-md bg-blue-200 mx-0.5 my-0.5 px-3 py-0.5 inline-block text-gray-600 dark:bg-blue-400 dark:text-white">Databases</span>
+                        class="mis-redes rounded-md bg-blue-200 mx-0.5 my-0.5 px-3 py-0.5 inline-block text-gray-600 dark:bg-blue-400 dark:text-white">Databases</span>
                     <span
-                        class="rounded-md bg-blue-200 mx-0.5 my-0.5 px-3 py-0.5 inline-block text-gray-600 dark:bg-blue-400 dark:text-white">Visual
+                        class="mis-redes rounded-md bg-blue-200 mx-0.5 my-0.5 px-3 py-0.5 inline-block text-gray-600 dark:bg-blue-400 dark:text-white">Visual
                         Studio Code</span>
                     <span
-                        class="rounded-md bg-blue-200 mx-0.5 my-0.5 px-3 py-0.5 inline-block text-gray-600 dark:bg-blue-400 dark:text-white">CPanel</span>
+                        class="mis-redes rounded-md bg-blue-200 mx-0.5 my-0.5 px-3 py-0.5 inline-block text-gray-600 dark:bg-blue-400 dark:text-white">CPanel</span>
                     <span
-                        class="rounded-md bg-blue-200 mx-0.5 my-0.5 px-3 py-0.5 inline-block text-gray-600 dark:bg-blue-400 dark:text-white">Linux</span>
+                        class="mis-redes rounded-md bg-blue-200 mx-0.5 my-0.5 px-3 py-0.5 inline-block text-gray-600 dark:bg-blue-400 dark:text-white">Linux</span>
                     <span
-                        class="rounded-md bg-blue-200 mx-0.5 my-0.5 px-3 py-0.5 inline-block text-gray-600 dark:bg-blue-400 dark:text-white">Windows</span>
+                        class="mis-redes rounded-md bg-blue-200 mx-0.5 my-0.5 px-3 py-0.5 inline-block text-gray-600 dark:bg-blue-400 dark:text-white">Windows</span>
                     <span
-                        class="rounded-md bg-blue-200 mx-0.5 my-0.5 px-3 py-0.5 inline-block text-gray-600 dark:bg-blue-400 dark:text-white">Technical
+                        class="mis-redes rounded-md bg-blue-200 mx-0.5 my-0.5 px-3 py-0.5 inline-block text-gray-600 dark:bg-blue-400 dark:text-white">Technical
                         Support</span>
                     <span
-                        class="rounded-md bg-blue-200 mx-0.5 my-0.5 px-3 py-0.5 inline-block text-gray-600 dark:bg-blue-400 dark:text-white">Web
+                        class="mis-redes rounded-md bg-blue-200 mx-0.5 my-0.5 px-3 py-0.5 inline-block text-gray-600 dark:bg-blue-400 dark:text-white">Web
                         Site Desing</span>
                     <span
-                        class="rounded-md bg-blue-200 mx-0.5 my-0.5 px-3 py-0.5 inline-block text-gray-600 dark:bg-blue-400 dark:text-white">Laravel</span>
+                        class="mis-redes rounded-md bg-blue-200 mx-0.5 my-0.5 px-3 py-0.5 inline-block text-gray-600 dark:bg-blue-400 dark:text-white">Laravel</span>
                     <span
-                        class="rounded-md bg-blue-200 mx-0.5 my-0.5 px-3 py-0.5 inline-block text-gray-600 dark:bg-blue-400 dark:text-white">HTML</span>
+                        class="mis-redes rounded-md bg-blue-200 mx-0.5 my-0.5 px-3 py-0.5 inline-block text-gray-600 dark:bg-blue-400 dark:text-white">HTML</span>
                     <span
-                        class="rounded-md bg-blue-200 mx-0.5 my-0.5 px-3 py-0.5 inline-block text-gray-600 dark:bg-blue-400 dark:text-white">CSS</span>
+                        class="mis-redes rounded-md bg-blue-200 mx-0.5 my-0.5 px-3 py-0.5 inline-block text-gray-600 dark:bg-blue-400 dark:text-white">CSS</span>
                     <span
-                        class="rounded-md bg-blue-200 mx-0.5 my-0.5 px-3 py-0.5 inline-block text-gray-600 dark:bg-blue-400 dark:text-white">Javascript</span>
+                        class="mis-redes rounded-md bg-blue-200 mx-0.5 my-0.5 px-3 py-0.5 inline-block text-gray-600 dark:bg-blue-400 dark:text-white">Javascript</span>
                     <span
-                        class="rounded-md bg-blue-200 mx-0.5 my-0.5 px-3 py-0.5 inline-block text-gray-600 dark:bg-blue-400 dark:text-white">PHP</span>
+                        class="mis-redes rounded-md bg-blue-200 mx-0.5 my-0.5 px-3 py-0.5 inline-block text-gray-600 dark:bg-blue-400 dark:text-white">PHP</span>
                     <span
-                        class="rounded-md bg-blue-200 mx-0.5 my-0.5 px-3 py-0.5 inline-block text-gray-600 dark:bg-blue-400 dark:text-white">Java
+                        class="mis-redes rounded-md bg-blue-200 mx-0.5 my-0.5 px-3 py-0.5 inline-block text-gray-600 dark:bg-blue-400 dark:text-white">Java
                         SE</span>
                     <span
-                        class="rounded-md bg-blue-200 mx-0.5 my-0.5 px-3 py-0.5 inline-block text-gray-600 dark:bg-blue-400 dark:text-white">PostgreSQL</span>
+                        class="mis-redes rounded-md bg-blue-200 mx-0.5 my-0.5 px-3 py-0.5 inline-block text-gray-600 dark:bg-blue-400 dark:text-white">PostgreSQL</span>
                     <span
-                        class="rounded-md bg-blue-200 mx-0.5 my-0.5 px-3 py-0.5 inline-block text-gray-600 dark:bg-blue-400 dark:text-white">MySQL</span>
+                        class="mis-redes rounded-md bg-blue-200 mx-0.5 my-0.5 px-3 py-0.5 inline-block text-gray-600 dark:bg-blue-400 dark:text-white">MySQL</span>
                     <span
-                        class="rounded-md bg-blue-200 mx-0.5 my-0.5 px-3 py-0.5 inline-block text-gray-600 dark:bg-blue-400 dark:text-white">Digital
+                        class="mis-redes rounded-md bg-blue-200 mx-0.5 my-0.5 px-3 py-0.5 inline-block text-gray-600 dark:bg-blue-400 dark:text-white">Digital
                         Ocean</span>
                     <span
-                        class="rounded-md bg-blue-200 mx-0.5 my-0.5 px-3 py-0.5 inline-block text-gray-600 dark:bg-blue-400 dark:text-white">Git</span>
+                        class="mis-redes rounded-md bg-blue-200 mx-0.5 my-0.5 px-3 py-0.5 inline-block text-gray-600 dark:bg-blue-400 dark:text-white">Git</span>
                     <span
-                        class="rounded-md bg-blue-200 mx-0.5 my-0.5 px-3 py-0.5 inline-block text-gray-600 dark:bg-blue-400 dark:text-white">GitHub</span>
+                        class="mis-redes rounded-md bg-blue-200 mx-0.5 my-0.5 px-3 py-0.5 inline-block text-gray-600 dark:bg-blue-400 dark:text-white">GitHub</span>
                     <span
-                        class="rounded-md bg-blue-200 mx-0.5 my-0.5 px-3 py-0.5 inline-block text-gray-600 dark:bg-blue-400 dark:text-white">GitLab</span>
+                        class="mis-redes rounded-md bg-blue-200 mx-0.5 my-0.5 px-3 py-0.5 inline-block text-gray-600 dark:bg-blue-400 dark:text-white">GitLab</span>
                     <span
-                        class="rounded-md bg-blue-200 mx-0.5 my-0.5 px-3 py-0.5 inline-block text-gray-600 dark:bg-blue-400 dark:text-white">TailwindCSS</span>
+                        class="mis-redes rounded-md bg-blue-200 mx-0.5 my-0.5 px-3 py-0.5 inline-block text-gray-600 dark:bg-blue-400 dark:text-white">TailwindCSS</span>
                     <span
-                        class="rounded-md bg-blue-200 mx-0.5 my-0.5 px-3 py-0.5 inline-block text-gray-600 dark:bg-blue-400 dark:text-white">MaterializeCSS</span>
+                        class="mis-redes rounded-md bg-blue-200 mx-0.5 my-0.5 px-3 py-0.5 inline-block text-gray-600 dark:bg-blue-400 dark:text-white">MaterializeCSS</span>
                     <span
-                        class="rounded-md bg-blue-200 mx-0.5 my-0.5 px-3 py-0.5 inline-block text-gray-600 dark:bg-blue-400 dark:text-white">Boostrap</span>
+                        class="mis-redes rounded-md bg-blue-200 mx-0.5 my-0.5 px-3 py-0.5 inline-block text-gray-600 dark:bg-blue-400 dark:text-white">Boostrap</span>
                     <span
-                        class="rounded-md bg-blue-200 mx-0.5 my-0.5 px-3 py-0.5 inline-block text-gray-600 dark:bg-blue-400 dark:text-white">Graphic
+                        class="mis-redes rounded-md bg-blue-200 mx-0.5 my-0.5 px-3 py-0.5 inline-block text-gray-600 dark:bg-blue-400 dark:text-white">Graphic
                         Desing</span>
                     <span
-                        class="rounded-md bg-blue-200 mx-0.5 my-0.5 px-3 py-0.5 inline-block text-gray-600 dark:bg-blue-400 dark:text-white">Information
+                        class="mis-redes rounded-md bg-blue-200 mx-0.5 my-0.5 px-3 py-0.5 inline-block text-gray-600 dark:bg-blue-400 dark:text-white">Information
                         System Desing</span>
                     <span
-                        class="rounded-md bg-blue-200 mx-0.5 my-0.5 px-3 py-0.5 inline-block text-gray-600 dark:bg-blue-400 dark:text-white">UML</span>
+                        class="mis-redes rounded-md bg-blue-200 mx-0.5 my-0.5 px-3 py-0.5 inline-block text-gray-600 dark:bg-blue-400 dark:text-white">UML</span>
                     <span
-                        class="rounded-md bg-blue-200 mx-0.5 my-0.5 px-3 py-0.5 inline-block text-gray-600 dark:bg-blue-400 dark:text-white">Office</span>
+                        class="mis-redes rounded-md bg-blue-200 mx-0.5 my-0.5 px-3 py-0.5 inline-block text-gray-600 dark:bg-blue-400 dark:text-white">Office</span>
                     <span
-                        class="rounded-md bg-blue-200 mx-0.5 my-0.5 px-3 py-0.5 inline-block text-gray-600 dark:bg-blue-400 dark:text-white">PC
+                        class="mis-redes rounded-md bg-blue-200 mx-0.5 my-0.5 px-3 py-0.5 inline-block text-gray-600 dark:bg-blue-400 dark:text-white">PC
                         Maintence</span>
                     <span
-                        class="rounded-md bg-blue-200 mx-0.5 my-0.5 px-3 py-0.5 inline-block text-gray-600 dark:bg-blue-400 dark:text-white">Facebook
+                        class="mis-redes rounded-md bg-blue-200 mx-0.5 my-0.5 px-3 py-0.5 inline-block text-gray-600 dark:bg-blue-400 dark:text-white">Facebook
                         Ads</span>
                     <span
-                        class="rounded-md bg-blue-200 mx-0.5 my-0.5 px-3 py-0.5 inline-block text-gray-600 dark:bg-blue-400 dark:text-white">Google
+                        class="mis-redes rounded-md bg-blue-200 mx-0.5 my-0.5 px-3 py-0.5 inline-block text-gray-600 dark:bg-blue-400 dark:text-white">Google
                         Ads</span>
                 </div>
             </div>
 
-            <div
-                class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-green-500 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+            <div class="mx-auto max-w-2xl border-t border-green-500 lg:mx-0 lg:max-w-none">
+                <div class="animated-top">
+                    <span class="text-2xl font-semibold text-white">Experience</span>
+                </div>
+                <div
+                    class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 pt-5 lg:mx-0 lg:max-w-none lg:grid-cols-3">
 
-                <article class="flex max-w-xl flex-col items-start justify-between">
-                    <div class="flex items-center gap-x-4 text-xs">
-                        <time datetime="2020-03-16" class="text-gray-500">August 2023 to October 2024</time>
-                        <a
-                            class="relative z-10 rounded-full bg-gray-50  px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Tecnical
-                            Support, CCTV, Mikrotik</a>
-                    </div>
-                    <div class="group relative">
-                        <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 dark:text-white">
-                            <a>
-                                <!-- <span class="absolute inset-0"></span> -->
-                                IT Officer and Programmer in UNIBOL Guarani
-                            </a>
-                        </h3>
-                        <p class="mt-5 text-sm leading-6 text-gray-600 dark:text-slate-400">
-                            IT technical support to the university's administrators, students, and teachers.
-                            Development of systems required by the university, several of them required by the central
-                            government.
-                            Extension of internet network, management of mikrotik routers and ubiquiti long-distance
-                            antennas.
-                            Control of IP and analog CCTV surveillance cameras.
-                        </p>
-                    </div>
-
-
-                    <div class="md:grid grid-cols-2 m-0 p-0">
-                        <div class="relative mt-2 flex items-center gap-x-2">
-                            <img src="img/vicerrector.png" alt=""
-                                class="h-10 w-10 lg:h-7 lg:w-7 rounded-full bg-gray-50">
-                            <div class="sm:text-sm md:text-xs">
-                                <p class="font-semibold text-gray-900 dark:text-white">
-                                    <a href="https://wa.me/59171360924" target="_blank">
-                                        <span class="absolute inset-0">
-                                        </span>
-                                        Milton Chacay G.
-                                    </a>
-                                </p>
-                                <p class="text-gray-600 dark:text-slate-400">Vicerrector</p>
-                            </div>
+                    <article class="flex max-w-xl flex-col items-start justify-between">
+                        <div class="flex items-center gap-x-4 text-xs">
+                            <time datetime="2020-03-16" class="text-gray-500">August 2023 to October 2024</time>
+                            <a
+                                class="relative z-10 rounded-full bg-gray-50  px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Tecnical
+                                Support, CCTV, Mikrotik</a>
                         </div>
-
-                        <div class="relative mt-2 flex items-center gap-x-2">
-                            <img src="img/rrhh.png" alt=""
-                                class="h-10 w-10 lg:h-7 lg:w-7 rounded-full bg-gray-50">
-                            <div class="sm:text-sm md:text-xs">
-                                <p class="font-semibold text-gray-900 dark:text-white">
-                                    <a href="https://wa.me/59173351138" target="_blank">
-                                        <span class="absolute inset-0">
-                                        </span>
-                                        Rita Nelly Barrios
-                                    </a>
-                                </p>
-                                <p class="text-gray-600 dark:text-slate-400">Recursos Humanos</p>
-                            </div>
-                        </div>
-
-                        <div class="relative mt-2 flex items-center gap-x-2">
-                            <img src="img/auditoria.png" alt=""
-                                class="h-10 w-10 lg:h-7 lg:w-7 rounded-full bg-gray-50">
-                            <div class="sm:text-sm md:text-xs">
-                                <p class="font-semibold text-gray-900 dark:text-white">
-                                    <a href="https://wa.me/59168641568" target="_blank">
-                                        <span class="absolute inset-0">
-                                        </span>
-                                        José María Angulo
-                                    </a>
-                                </p>
-                                <p class="text-gray-600 dark:text-slate-400">Auditor Interno</p>
-                            </div>
-                        </div>
-
-                        <div class="relative mt-2 flex items-center gap-x-2">
-                            <img src="img/contabilidad.png" alt=""
-                                class="h-10 w-10 lg:h-7 lg:w-7 rounded-full bg-gray-50">
-                            <div class="sm:text-sm md:text-xs">
-                                <p class="font-semibold text-gray-900 dark:text-white">
-                                    <a href="https://wa.me/59176090616" target="_blank">
-                                        <span class="absolute inset-0">
-                                        </span>
-                                        Ximena Ayala Andrade
-                                    </a>
-                                </p>
-                                <p class="text-gray-600 dark:text-slate-400">Contabilidad</p>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-
-
-
-
-                <article class="flex max-w-xl flex-col items-start justify-between">
-                    <div class="flex items-center gap-x-4 text-xs">
-                        <time datetime="2020-03-16" class="text-gray-500">March to July, 2023</time>
-                        <a
-                            class="relative z-10 rounded-full bg-gray-50  px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Document
-                            Reviewer</a>
-                    </div>
-                    <div class="group relative">
-                        <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 dark:text-white">
-                            <a>
-                                <!-- <span class="absolute inset-0"></span> -->
-                                Kardex y Estadísticas in UNIBOL Guarani
-                            </a>
-                        </h3>
-                        <p class="mt-5 text-sm leading-6 text-gray-600 dark:text-slate-400">
-                            Order folders with documents from students of university UNIBOL Guarani. Additionalment I
-                            development software, several of them required by the central government, t, assigned to me
-                            by senior positions such as Vice-Chancellor, Director of Planning and Administrations and
-                            Records.
-                        </p>
-                    </div>
-                    <div class="relative mt-8 flex items-center gap-x-4">
-                        <img src="img/admisiones.png" alt="" class="h-10 w-10 rounded-full bg-gray-50">
-                        <div class="text-sm leading-6">
-                            <p class="font-semibold text-gray-900 dark:text-white">
-                                <a href="https://wa.me/59173175643" target="_blank">
-                                    <span class="absolute inset-0"></span>
-                                    Finley Guerra Mendoza
+                        <div class="group relative">
+                            <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 dark:text-white">
+                                <a>
+                                    <!-- <span class="absolute inset-0"></span> -->
+                                    IT Officer and Programmer in UNIBOL Guarani
                                 </a>
+                            </h3>
+                            <p class="mt-5 text-sm leading-6 text-gray-600 dark:text-slate-400">
+                                IT technical support to the university's administrators, students, and teachers.
+                                Development of systems required by the university, several of them required by the
+                                central
+                                government.
+                                Extension of internet network, management of mikrotik routers and ubiquiti long-distance
+                                antennas.
+                                Control of IP and analog CCTV surveillance cameras.
                             </p>
-                            <p class="text-gray-600 dark:text-slate-400">Responsable Admisiones Registros</p>
                         </div>
-                    </div>
-                </article>
+
+
+                        <div class="md:grid grid-cols-2 m-0 p-0">
+                            <div class="relative mt-2 flex items-center gap-x-2">
+                                <img src="img/vicerrector.png" alt=""
+                                    class="h-10 w-10 lg:h-7 lg:w-7 rounded-full bg-gray-50">
+                                <div class="sm:text-sm md:text-xs">
+                                    <p class="font-semibold text-gray-900 dark:text-white">
+                                        <a href="https://wa.me/59171360924" target="_blank">
+                                            <span class="absolute inset-0">
+                                            </span>
+                                            Milton Chacay G.
+                                        </a>
+                                    </p>
+                                    <p class="text-gray-600 dark:text-slate-400">Vicerrector</p>
+                                </div>
+                            </div>
+
+                            <div class="relative mt-2 flex items-center gap-x-2">
+                                <img src="img/rrhh.png" alt="" class="h-10 w-10 lg:h-7 lg:w-7 rounded-full bg-gray-50">
+                                <div class="sm:text-sm md:text-xs">
+                                    <p class="font-semibold text-gray-900 dark:text-white">
+                                        <a href="https://wa.me/59173351138" target="_blank">
+                                            <span class="absolute inset-0">
+                                            </span>
+                                            Rita Nelly Barrios
+                                        </a>
+                                    </p>
+                                    <p class="text-gray-600 dark:text-slate-400">Recursos Humanos</p>
+                                </div>
+                            </div>
+
+                            <div class="relative mt-2 flex items-center gap-x-2">
+                                <img src="img/auditoria.png" alt=""
+                                    class="h-10 w-10 lg:h-7 lg:w-7 rounded-full bg-gray-50">
+                                <div class="sm:text-sm md:text-xs">
+                                    <p class="font-semibold text-gray-900 dark:text-white">
+                                        <a href="https://wa.me/59168641568" target="_blank">
+                                            <span class="absolute inset-0">
+                                            </span>
+                                            José María Angulo
+                                        </a>
+                                    </p>
+                                    <p class="text-gray-600 dark:text-slate-400">Auditor Interno</p>
+                                </div>
+                            </div>
+
+                            <div class="relative mt-2 flex items-center gap-x-2">
+                                <img src="img/contabilidad.png" alt=""
+                                    class="h-10 w-10 lg:h-7 lg:w-7 rounded-full bg-gray-50">
+                                <div class="sm:text-sm md:text-xs">
+                                    <p class="font-semibold text-gray-900 dark:text-white">
+                                        <a href="https://wa.me/59176090616" target="_blank">
+                                            <span class="absolute inset-0">
+                                            </span>
+                                            Ximena Ayala Andrade
+                                        </a>
+                                    </p>
+                                    <p class="text-gray-600 dark:text-slate-400">Contabilidad</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
 
 
 
-                <article class="flex max-w-xl flex-col items-start justify-between">
-                    <div class="flex items-center gap-x-4 text-xs">
-                        <time datetime="2020-03-16" class="text-gray-500">February, 2023</time>
-                        <a
-                            class="relative z-10 rounded-full bg-gray-50  px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Telecommunications
-                            Technician Internship</a>
-                    </div>
-                    <div class="group relative">
-                        <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 dark:text-white">
-                            <a>
-                                <!-- <span class="absolute inset-0"></span> -->
-                                Tigo Telecommunications Technician Internship in Camiri
-                            </a>
-                        </h3>
-                        <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600 dark:text-slate-400">
-                            I perform antenna maintenance with the help of my supervisor.
-                            Emergency trips to solve signal drops due to rain storms and winds that cut off the power
-                            supply.
-                        </p>
-                    </div>
-                    <div class="relative mt-8 flex items-center gap-x-4">
-                        <img src="img/diegocondori.jpg" alt="" class="h-10 w-10 rounded-full bg-gray-50">
-                        <div class="text-sm leading-6">
-                            <p class="font-semibold text-gray-900 dark:text-white">
-                                <a href="https://wa.me/59174695703" target="_blank">
-                                    <span class="absolute inset-0"></span>
-                                    Diego Condori C.
+
+                    <article class="flex max-w-xl flex-col items-start justify-between">
+                        <div class="flex items-center gap-x-4 text-xs">
+                            <time datetime="2020-03-16" class="text-gray-500">March to July, 2023</time>
+                            <a
+                                class="relative z-10 rounded-full bg-gray-50  px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Document
+                                Reviewer</a>
+                        </div>
+                        <div class="group relative">
+                            <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 dark:text-white">
+                                <a>
+                                    <!-- <span class="absolute inset-0"></span> -->
+                                    Kardex y Estadísticas in UNIBOL Guarani
                                 </a>
+                            </h3>
+                            <p class="mt-5 text-sm leading-6 text-gray-600 dark:text-slate-400">
+                                Order folders with documents from students of university UNIBOL Guarani. Additionalment
+                                I
+                                development software, several of them required by the central government, t, assigned to
+                                me
+                                by senior positions such as Vice-Chancellor, Director of Planning and Administrations
+                                and
+                                Records.
                             </p>
-                            <p class="text-gray-600 dark:text-slate-400">Head of area</p>
                         </div>
-                    </div>
-                </article>
+                        <div class="relative mt-8 flex items-center gap-x-4">
+                            <img src="img/admisiones.png" alt="" class="h-10 w-10 rounded-full bg-gray-50">
+                            <div class="text-sm leading-6">
+                                <p class="font-semibold text-gray-900 dark:text-white">
+                                    <a href="https://wa.me/59173175643" target="_blank">
+                                        <span class="absolute inset-0"></span>
+                                        Finley Guerra Mendoza
+                                    </a>
+                                </p>
+                                <p class="text-gray-600 dark:text-slate-400">Responsable Admisiones Registros</p>
+                            </div>
+                        </div>
+                    </article>
 
 
 
-                <article class="flex max-w-xl flex-col items-start justify-between">
-                    <div class="flex items-center gap-x-4 text-xs">
-                        <time datetime="2020-03-16" class="text-gray-500">March to December, 2022</time>
-                        <a
-                            class="relative z-10 rounded-full bg-gray-50  px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Training
-                            Coordinator</a>
-                    </div>
-                    <div class="group relative">
-                        <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 dark:text-white">
-                            <a>
-                                <!-- <span class="absolute inset-0"></span> -->
-                                Training Coordinator in the Computer Engineering and Systems Career, FICH-UAGRM
-                            </a>
-                        </h3>
-                        <p class="mt-5 text-sm leading-6 text-gray-600 dark:text-slate-400">I have
-                            coordinated with professors external and students, ads management for publish the courses
-                            launched, pay management with the proffesors, colaboration in Career Management</p>
-                    </div>
-                    <div class="md:grid md:grid-cols-2">
+                    <article class="flex max-w-xl flex-col items-start justify-between">
+                        <div class="flex items-center gap-x-4 text-xs">
+                            <time datetime="2020-03-16" class="text-gray-500">February, 2023</time>
+                            <a
+                                class="relative z-10 rounded-full bg-gray-50  px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Telecommunications
+                                Technician Internship</a>
+                        </div>
+                        <div class="group relative">
+                            <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 dark:text-white">
+                                <a>
+                                    <!-- <span class="absolute inset-0"></span> -->
+                                    Tigo Telecommunications Technician Internship in Camiri
+                                </a>
+                            </h3>
+                            <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600 dark:text-slate-400">
+                                I perform antenna maintenance with the help of my supervisor.
+                                Emergency trips to solve signal drops due to rain storms and winds that cut off the
+                                power
+                                supply.
+                            </p>
+                        </div>
+                        <div class="relative mt-8 flex items-center gap-x-4">
+                            <img src="img/diegocondori.jpg" alt="" class="h-10 w-10 rounded-full bg-gray-50">
+                            <div class="text-sm leading-6">
+                                <p class="font-semibold text-gray-900 dark:text-white">
+                                    <a href="https://wa.me/59174695703" target="_blank">
+                                        <span class="absolute inset-0"></span>
+                                        Diego Condori C.
+                                    </a>
+                                </p>
+                                <p class="text-gray-600 dark:text-slate-400">Head of area</p>
+                            </div>
+                        </div>
+                    </article>
+
+
+
+                    <article class="flex max-w-xl flex-col items-start justify-between">
+                        <div class="flex items-center gap-x-4 text-xs">
+                            <time datetime="2020-03-16" class="text-gray-500">March to December, 2022</time>
+                            <a
+                                class="relative z-10 rounded-full bg-gray-50  px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Training
+                                Coordinator</a>
+                        </div>
+                        <div class="group relative">
+                            <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 dark:text-white">
+                                <a>
+                                    <!-- <span class="absolute inset-0"></span> -->
+                                    Training Coordinator in the Computer Engineering and Systems Career, FICH-UAGRM
+                                </a>
+                            </h3>
+                            <p class="mt-5 text-sm leading-6 text-gray-600 dark:text-slate-400">I have
+                                coordinated with professors external and students, ads management for publish the
+                                courses
+                                launched, pay management with the proffesors, colaboration in Career Management</p>
+                        </div>
+                        <div class="md:grid md:grid-cols-2">
+                            <div class="relative mt-8 flex items-center gap-x-4">
+                                <img src="img/iveth.jpg" alt="" class="h-10 w-10 rounded-full bg-gray-50">
+                                <div class="text-sm leading-6">
+                                    <p class="font-semibold text-gray-900 dark:text-white">
+                                        <a href="https://wa.me/59167847061" target="_blank">
+                                            <span class="absolute inset-0"></span>
+                                            Bescie Robles C.
+                                        </a>
+                                    </p>
+                                    <p class="text-gray-600 dark:text-slate-400">Race director</p>
+                                </div>
+                            </div>
+                            <div class="relative mt-8 flex items-center gap-x-4">
+                                <img src="img/maria.jpg" alt="" class="h-10 w-10 rounded-full bg-gray-50">
+                                <div class="text-sm leading-6">
+                                    <p class="font-semibold text-gray-900 dark:text-white">
+                                        <a href="https://wa.me/59167678060" target="_blank">
+                                            <span class="absolute inset-0"></span>
+                                            Elizabeth Condori M.
+                                        </a>
+                                    </p>
+                                    <p class="text-gray-600 dark:text-slate-400">Secretary</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+
+
+                    <article class="flex max-w-xl flex-col items-start justify-between">
+                        <div class="flex items-center gap-x-4 text-xs">
+                            <time datetime="2020-03-16" class="text-gray-500">October to March, 2021</time>
+                            <a
+                                class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Laravel
+                                Development</a>
+                        </div>
+                        <div class="group relative">
+                            <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 dark:text-white">
+                                <a>
+                                    <!-- <span class="absolute inset-0"></span> -->
+                                    Laravel Development for build a human resources web system in HAM Camiri
+                                </a>
+                            </h3>
+                            <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600 dark:text-slate-400">I have
+                                development the web system with a group of profesional colleagues. I feel great. The
+                                system
+                                has been perfect.</p>
+                        </div>
+                        <div class="md:grid md:grid-cols-2">
+                            <div class="relative mt-8 flex items-center gap-x-4">
+                                <img src="img/gustavo.jpg" alt="" class="h-10 w-10 rounded-full bg-gray-50">
+                                <div class="text-sm leading-6">
+                                    <p class="font-semibold text-gray-900 dark:text-white">
+                                        <a href="https://wa.me/59160025980" target="_blank">
+                                            <span class="absolute inset-0"></span>
+                                            Gustavo Murguia F.
+                                        </a>
+                                    </p>
+                                    <p class="text-gray-600 dark:text-slate-400">Colaborator</p>
+                                </div>
+                            </div>
+                            <div class="relative mt-8 flex items-center gap-x-4">
+                                <img src="img/malena.jpg" alt="" class="h-10 w-10 rounded-full bg-gray-50">
+                                <div class="text-sm leading-6">
+                                    <p class="font-semibold text-gray-900 dark:text-white">
+                                        <a href="https://wa.me/591" target="_blank">
+                                            <span class="absolute inset-0"></span>
+                                            Malena Rojas C.
+                                        </a>
+                                    </p>
+                                    <p class="text-gray-600 dark:text-slate-400">Colaborator</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+
+
+                    <article class="flex max-w-xl flex-col items-start justify-between">
+                        <div class="flex items-center gap-x-4 text-xs">
+                            <time datetime="2020-03-16" class="text-gray-500">March to December, 2021</time>
+                            <a
+                                class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Graduation
+                                project</a>
+                        </div>
+                        <div class="group relative">
+                            <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 dark:text-white">
+                                <a>
+                                    <!-- <span class="absolute inset-0"></span> -->
+                                    Development and Defending from Graduation project for get System Engineering Career
+                                </a>
+                            </h3>
+                            <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600 dark:text-slate-400">
+                                I have development my Graduation Project in Laravel Framework for the Transport Bussines
+                                12
+                                of July, in Camiri. It has been perfect.
+                            </p>
+                        </div>
                         <div class="relative mt-8 flex items-center gap-x-4">
                             <img src="img/iveth.jpg" alt="" class="h-10 w-10 rounded-full bg-gray-50">
                             <div class="text-sm leading-6">
@@ -383,111 +493,74 @@
                                         Bescie Robles C.
                                     </a>
                                 </p>
-                                <p class="text-gray-600 dark:text-slate-400">Race director</p>
+                                <p class="text-gray-600 dark:text-slate-400">Project Tutor</p>
                             </div>
                         </div>
-                        <div class="relative mt-8 flex items-center gap-x-4">
-                            <img src="img/maria.jpg" alt="" class="h-10 w-10 rounded-full bg-gray-50">
-                            <div class="text-sm leading-6">
-                                <p class="font-semibold text-gray-900 dark:text-white">
-                                    <a href="https://wa.me/59167678060" target="_blank">
-                                        <span class="absolute inset-0"></span>
-                                        Elizabeth Condori M.
-                                    </a>
-                                </p>
-                                <p class="text-gray-600 dark:text-slate-400">Secretary</p>
-                            </div>
-                        </div>
-                    </div>
-                </article>
+                    </article>
 
-
-
-                <article class="flex max-w-xl flex-col items-start justify-between">
-                    <div class="flex items-center gap-x-4 text-xs">
-                        <time datetime="2020-03-16" class="text-gray-500">October to March, 2021</time>
-                        <a class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Laravel
-                            Development</a>
-                    </div>
-                    <div class="group relative">
-                        <h3
-                            class="mt-3 text-lg font-semibold leading-6 text-gray-900 dark:text-white">
-                            <a>
-                                <!-- <span class="absolute inset-0"></span> -->
-                                Laravel Development for build a human resources web system in HAM Camiri
-                            </a>
-                        </h3>
-                        <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600 dark:text-slate-400">I have
-                            development the web system with a group of profesional colleagues. I feel great. The system
-                            has been perfect.</p>
-                    </div>
-                    <div class="md:grid md:grid-cols-2">
-                        <div class="relative mt-8 flex items-center gap-x-4">
-                            <img src="img/gustavo.jpg" alt="" class="h-10 w-10 rounded-full bg-gray-50">
-                            <div class="text-sm leading-6">
-                                <p class="font-semibold text-gray-900 dark:text-white">
-                                    <a href="https://wa.me/59160025980" target="_blank">
-                                        <span class="absolute inset-0"></span>
-                                        Gustavo Murguia F.
-                                    </a>
-                                </p>
-                                <p class="text-gray-600 dark:text-slate-400">Colaborator</p>
-                            </div>
-                        </div>
-                        <div class="relative mt-8 flex items-center gap-x-4">
-                            <img src="img/malena.jpg" alt="" class="h-10 w-10 rounded-full bg-gray-50">
-                            <div class="text-sm leading-6">
-                                <p class="font-semibold text-gray-900 dark:text-white">
-                                    <a href="https://wa.me/591" target="_blank">
-                                        <span class="absolute inset-0"></span>
-                                        Malena Rojas C.
-                                    </a>
-                                </p>
-                                <p class="text-gray-600 dark:text-slate-400">Colaborator</p>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-
-
-
-                <article class="flex max-w-xl flex-col items-start justify-between">
-                    <div class="flex items-center gap-x-4 text-xs">
-                        <time datetime="2020-03-16" class="text-gray-500">March to December, 2021</time>
-                        <a class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Graduation
-                            project</a>
-                    </div>
-                    <div class="group relative">
-                        <h3
-                            class="mt-3 text-lg font-semibold leading-6 text-gray-900 dark:text-white">
-                            <a>
-                                <!-- <span class="absolute inset-0"></span> -->
-                                Development and Defending from Graduation project for get System Engineering Career
-                            </a>
-                        </h3>
-                        <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600 dark:text-slate-400">
-                            I have development my Graduation Project in Laravel Framework for the Transport Bussines 12
-                            of July, in Camiri. It has been perfect.
-                        </p>
-                    </div>
-                    <div class="relative mt-8 flex items-center gap-x-4">
-                        <img src="img/iveth.jpg" alt="" class="h-10 w-10 rounded-full bg-gray-50">
-                        <div class="text-sm leading-6">
-                            <p class="font-semibold text-gray-900 dark:text-white">
-                                <a href="https://wa.me/59167847061" target="_blank">
-                                    <span class="absolute inset-0"></span>
-                                    Bescie Robles C.
-                                </a>
-                            </p>
-                            <p class="text-gray-600 dark:text-slate-400">Project Tutor</p>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- More posts... -->
+                    <!-- More posts... -->
+                </div>
             </div>
         </div>
     </div>
+
+    <script src="js/anime.min.js"></script>
+    <script>
+        // Seleccionamos todos los elementos <article> y los elementos .mis-redes
+        const elements = document.querySelectorAll('article, .animated-top, .mis-redes, .wa-contact');
+
+        // Función para manejar la animación cuando un elemento entra en la vista
+        function animateElement(entries, observer) {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    // Animación común para los <article> y los .mis-redes
+                    anime({
+                        targets: entry.target,
+                        opacity: 1,               // Hacemos visible el elemento
+                        translateY: 0,            // Desplazamos el elemento hacia su posición original
+                        duration: 1000,           // Duración de la animación
+                        easing: 'easeOutQuad',    // Tipo de easing
+                        delay: index * 200,       // Aseguramos que cada elemento se anime en orden
+                    });
+
+                    // Si el elemento es .mis-redes, aplica el efecto de deslizamiento desde arriba
+                    if (entry.target.classList.contains('mis-redes')) {
+                        anime({
+                            targets: entry.target,
+                            easing: 'easeOutQuad',
+                            delay: index * 200,
+                        });
+                    }
+
+                    // Si el elemento es .wa-contact
+                    if (entry.target.classList.contains('wa-contact')) {
+                        anime({
+                            targets: entry.target,
+                            easing: 'easeOutQuad',
+                            duration: 500,
+                            scale: 1.20,
+                            loop: true
+                        });
+                    }
+
+                    // Deja de observar el elemento una vez que se ha animado
+                    observer.unobserve(entry.target);
+                }
+            });
+        }
+
+        // Usamos el IntersectionObserver existente
+        const observer = new IntersectionObserver(animateElement, {
+            threshold: 0.5  // Dispara la animación cuando el 50% del elemento esté visible
+        });
+
+        // Observamos todos los elementos seleccionados
+        elements.forEach(element => {
+            observer.observe(element);
+        });
+
+
+    </script>
 
 </body>
 
